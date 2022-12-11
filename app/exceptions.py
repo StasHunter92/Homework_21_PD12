@@ -36,15 +36,3 @@ class IncorrectQueryError(BaseError):
 
 class RouteError(BaseError):
     message = "Такого пункта нет"
-
-
-class CapacityLimitError(BaseError):
-    message = "Вы пытаетесь разместить больше товаров чем возможно"
-
-
-class CapacityLimitError(BaseError):
-    message = "Вы пытаетесь разместить больше товаров чем возможно"
-
-
-class CapacityLimitError(BaseError):
-    message = "Вы пытаетесь разместить больше товаров чем возможно"
