@@ -19,6 +19,7 @@ class Request:
         if self.__from not in route or self.__to not in route:
             raise RouteError
 
+    @property
     def get_amount(self) -> int:
         """
         Get the amount of the requested item \n
@@ -26,6 +27,7 @@ class Request:
         """
         return self.__amount
 
+    @property
     def get_product(self) -> str:
         """
         Get the name of requested item \n
@@ -33,6 +35,7 @@ class Request:
         """
         return self.__product
 
+    @property
     def get_from(self) -> Storage:
         """
         Get the instance of the requested departure point \n
@@ -40,6 +43,7 @@ class Request:
         """
         return self.__route[self.__from]
 
+    @property
     def get_name_from(self) -> str:
         """
         Get the name of the requested departure point \n
@@ -47,6 +51,7 @@ class Request:
         """
         return self.__from
 
+    @property
     def get_to(self) -> Storage:
         """
         Get the instance of the requested destination point \n
@@ -54,6 +59,7 @@ class Request:
         """
         return self.__route[self.__to]
 
+    @property
     def get_name_to(self) -> str:
         """
         Get the name of the requested destination point \n
