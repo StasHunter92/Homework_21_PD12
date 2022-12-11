@@ -29,7 +29,7 @@ class Courier:
 
     def return_order(self) -> None:
         """
-        Returns the order if destination is unavailable
+        Returns the order if destination is unavailable \n
         :return: None
         """
         self.__request.get_from.add(self.__request.get_product, self.__request.get_amount)
